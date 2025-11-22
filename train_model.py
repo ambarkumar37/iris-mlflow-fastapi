@@ -14,6 +14,7 @@ X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test
 mlflow.set_tracking_uri("file:./mlruns")
 mlflow.set_experiment("Iris_Classification")
 
+
 # Train model and log with MLflow
 with mlflow.start_run():
     model = RandomForestClassifier(n_estimators=100, random_state=42)

@@ -20,8 +20,7 @@ class IrisFeatures(BaseModel):
     petal_length: float
     petal_width: float
 
-model_path = "mlruns/199865320815695388/c68e101f76e8469787283d9f37ff7877/artifacts/iris_model"
-
+model_path = r"mlruns\759130372296487625\models\m-a2d06198053f4649ba7e0e2963aa5d6f\artifacts"
 model = mlflow.sklearn.load_model(model_path)
 
 @app.post("/predict")
@@ -31,4 +30,4 @@ def predict(features: IrisFeatures):
     return {"prediction": iris.target_names[prediction[0]]}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8080,reload=True,workers=4)

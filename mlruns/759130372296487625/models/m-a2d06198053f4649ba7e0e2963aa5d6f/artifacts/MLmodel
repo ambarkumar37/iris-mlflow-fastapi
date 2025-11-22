@@ -1,0 +1,22 @@
+artifact_path: file:///D:/Machine_learning/Deeplearning/aiml_tutorials/kubernetes/Docker-ML/mlruns/759130372296487625/models/m-a2d06198053f4649ba7e0e2963aa5d6f/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-a2d06198053f4649ba7e0e2963aa5d6f
+model_size_bytes: 177196
+model_uuid: m-a2d06198053f4649ba7e0e2963aa5d6f
+prompts: null
+run_id: d9c6d141ffe44c6dbe3639439f878ee7
+utc_time_created: '2025-11-22 05:47:21.488156'
