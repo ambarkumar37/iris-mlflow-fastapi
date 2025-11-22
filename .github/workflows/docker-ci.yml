@@ -55,5 +55,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            yourdockerhubusername/iris-mlflow-fastapi:latest
-            yourdockerhubusername/iris-mlflow-fastapi:${{ github.sha }}
+            ambarkumar37/iris-mlflow-fastapi:latest
+            ambarkumar37/iris-mlflow-fastapi:${{ github.sha }}
